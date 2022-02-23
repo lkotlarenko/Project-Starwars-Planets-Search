@@ -76,7 +76,7 @@ Este repositório já contém um _template_ de uma aplicação React criado e co
 
   - Serão `2` dias de projeto.
 
-  - Data de entrega para avaliação final do projeto: `03/03/2022 14:00`.
+  - Data de entrega para avaliação final do projeto: `07/03/2022 14:00`.
 
 ---
 
