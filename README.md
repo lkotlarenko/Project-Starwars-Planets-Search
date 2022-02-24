@@ -191,7 +191,10 @@ A tabela deve ser renderizada por um componente chamado `<Table />`. Os dados re
 
 A API a ser consultada está [nesse link](https://swapi-trybe.herokuapp.com/api/planets/). Ou seja, você deverá fazer um fetch para a URL `https://swapi-trybe.herokuapp.com/api/planets/`
 
-A tabela deve ter uma primeira linha com os headers e as demais com as informações de cada campo.
+_**obs:** caso a API esteja fora do ar ou não funcione para você, utilize [esse outro link](https://star-api-wars.herokuapp.com/)_
+
+
+A tabela deve ter a primeira linha com os headers e as demais com as informações de cada campo.
 
 O que será verificado:
 ```
@@ -311,7 +314,7 @@ O que será verificado:
 
 ![img](req-5.gif)
 
-### 6 - Apague um filtro de valor numérico ao clicar no ícone de `X` de um dos filtros e apague todas filtragens numéricas simultaneamente ao clicar em outro botão de `Remover todas filtragens`
+### 6 - Apague um filtro de valor numérico ao clicar no ícone de `X` de um dos filtros e apague todas filtragens numéricas simultaneamente ao clicar no botão de `Remover todas filtragens`
 
 O `button` com o ícone de `x` deve existir em cada filtro de valores numéricos.
 
