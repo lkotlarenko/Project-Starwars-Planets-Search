@@ -1,25 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
+import AppProvider from './context/Provider';
 import PlanetsTable from './components/PlanetsTable';
-import getPlanets from './api';
+import Filters from './components/Filters';
 
 function App() {
-  const [planets, setPlanets] = useState([]);
-  const [isLoading, setLoading] = useState(true);
-
-  const fetchPlanets = async () => {
-    await getPlanets(setPlanets, setLoading);
-  };
-
-  useEffect(() => {
-    fetchPlanets();
-  }, []);
-
   return (
-    <>
-      <h1>Planets</h1>
-      { !isLoading && <PlanetsTable data={ planets } /> }
-    </>
+    <AppProvider>
+      <Filters />
+      <PlanetsTable />
+    </AppProvider>
   );
 }
 
