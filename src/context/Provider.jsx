@@ -8,6 +8,13 @@ const AppProvider = ({ children }) => {
   const [isLoading, setLoading] = useState(true);
   const [INITIAL_PLANETS, setInitialPlanets] = useState([]);
   const [search, setSearch] = useState('');
+  const [filterType, setFilterType] = useState('population');
+  const [types, changeTypes] = useState(
+    ['population', 'orbital_period', 'diameter', 'rotation_period', 'surface_water'],
+  );
+  const [filterComparator, setComparator] = useState('maior que');
+  const [filterValue, setFilterValue] = useState(0);
+  const [filtersList, setFiltersList] = useState([]);
 
   useEffect(() => {
     const fetchPlanets = async () => {
@@ -25,6 +32,16 @@ const AppProvider = ({ children }) => {
     setInitialPlanets,
     search,
     setSearch,
+    filterType,
+    setFilterType,
+    types,
+    changeTypes,
+    filterComparator,
+    setComparator,
+    filterValue,
+    setFilterValue,
+    filtersList,
+    setFiltersList,
   };
 
   return (
