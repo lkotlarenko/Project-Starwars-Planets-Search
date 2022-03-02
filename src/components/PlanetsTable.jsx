@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const PlanetsTable = (props) => {
   const { data: planets } = props;
-  console.log(planets);
   return (
     <table>
       <thead>

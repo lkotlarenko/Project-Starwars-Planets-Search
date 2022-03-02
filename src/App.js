@@ -1,12 +1,25 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import PlanetsTable from './components/PlanetsTable';
-import { AppContext } from './context';
+import getPlanets from './api';
 
 function App() {
-  const { planets: { results } } = useContext(AppContext);
+  const [planets, setPlanets] = useState([]);
+  const [isLoading, setLoading] = useState(true);
+
+  const fetchPlanets = async () => {
+    await getPlanets(setPlanets, setLoading);
+  };
+
+  useEffect(() => {
+    fetchPlanets();
+  }, []);
+
   return (
-    <PlanetsTable data={ results } />
+    <>
+      <h1>Planets</h1>
+      { !isLoading && <PlanetsTable data={ planets } /> }
+    </>
   );
 }
 
