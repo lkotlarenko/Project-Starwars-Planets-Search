@@ -16,12 +16,12 @@ A list of planet filters from the Star Wars universe using **Context API and Hoo
 
 ## API used
 
-[*API used*](https://swapi-trybe.herokuapp.com/documentation).
+[*API*](https://swapi-trybe.herokuapp.com/documentation) used in this project.
 
 ---
 
 ## Deploy
 
-Test the deployment of this project [*here*] ().
+Test the deployment of this project [*here*] (https://project-starwars-planets-search-lkotlarenko.vercel.app/).
 
 ---
